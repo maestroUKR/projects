@@ -1,0 +1,7 @@
+This is a solve of task Cryptography I from Coursera.
+
+If we compute hash to check with receive video file, this means that the video will only begin playing after the *entire* file F has been downloaded. Goal in this project is to build a file authentication system that lets browsers authenticate and play video chunks as they are downloaded without having to wait for the entire file. 
+
+Instead of computing a hash of the entire file, the it breaks the file into 1KB blocks (1024 bytes). It computes the hash of the last block and appends the value to the second to last block. It then computes the hash of this augmented second to last block and appends the resulting hash to the third block from the end. This process continues from the last block to the first.
+
+The final hash value h0 – a hash of the first block with its appended hash – is distributed to users via the authenticated channel. 
