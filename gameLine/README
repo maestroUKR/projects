@@ -1,0 +1,8 @@
+Task
+To implement a command-line application that takes as an input:
+- rectangular map
+- initial balls distributions
+- coordinates of a starting cell
+- coordinates of a destination cell
+and present as a command-line output:
+- a shortest path as a sequence of steps(e.g. "U, U, L, L")
