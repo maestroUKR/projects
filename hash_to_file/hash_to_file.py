@@ -6,8 +6,17 @@ infile = "your input file"
 # reverse file
 outfile = "your output file"
 
-# function to return file in reverse order
+
 def reverse_file(in_filename, fout, blocksize=1024):
+	'''
+	Function to return file in reverse order.
+
+	in_filename: input file, path
+	fout: out file, path
+	blocksize: default, size in bytes
+
+	returns: none
+	'''
     filesize = os.path.getsize(in_filename)
     fin = open(in_filename, 'rb')
     fout = open(fout, 'wb')
@@ -17,6 +26,13 @@ def reverse_file(in_filename, fout, blocksize=1024):
         fout.write(data[::-1])
 
 def get_file_check(filename):
+	'''
+	Compute hash of file h0
+
+	filename: input file(in reverse order), path
+
+	returns: hash h0
+	'''
 	reverse_file(filename, outfile)
 	size_file = os.path.getsize(outfile)
 	first_block = size_file-(size_file/1024)*1024
