@@ -1,0 +1,10 @@
+There are 5 pseudo random number generators: 
+	Standart Python generator ('random' library); 
+	two of another are based  on linear shift registers;
+	generate number from text;
+	Blum Blum Shub generator.
+
+So, for testing these generators there are 3 criterias:
+	Probability criterion;
+	Byte independence criterion;
+	Uniform distribution criterion; 
