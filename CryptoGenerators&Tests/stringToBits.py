@@ -1,7 +1,5 @@
 __author__ = 'eugene'
 
-text = "The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms "
-
 BITS = ('0', '1')
 ASCII_BITS = 8
 
@@ -40,6 +38,9 @@ def bits_to_char(b):
 	for e in b:
 		value = (value * 2) + e
 	return chr(value)
+
+def bits_to_byte(b):
+	return ord(bits_to_char(seq_to_bits(b)))
 
 def list_to_string(p):
 	return ''.join(p)
