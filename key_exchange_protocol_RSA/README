@@ -1,0 +1,10 @@
+JavaNumberGenerator and MillerRabbinTest - used for finding random prime number 
+with given length and test it by Miller-Rabin primality test. 
+
+RSA  - generates RSA key pair and stores secret key (d, p, q) and public key (e, n).
+ 
+Also it allow create a programm to encrypt\decrypt messages, 
+create and verify digital signatures.
+
+So, the main idea is to create key exchange protocol with authentification
+using RSA algorithm.
