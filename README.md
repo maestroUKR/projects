@@ -1,4 +1,9 @@
 projects
 ========
 
-my own projects(Java, C/C++, Python etc.)
+Set of **mini**-projects
+
+Languages: 
+* Java
+* Python
+* C++
